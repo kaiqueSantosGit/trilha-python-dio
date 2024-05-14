@@ -8,21 +8,47 @@ class Banco:
     if valor > 0:
       self.saldo += valor
       self.depositos.append(valor)
+      print("\n")
+      print("==================================================")
+      print("\n")
       print(f"Depósito de R$ {valor:.2f} Realizado com sucesso.")
-      
+      print("\n")
+      print("==================================================")
   def saque(self, valor):
     if len(self.saques) < 3:
       if valor <= 500:
         if self.saldo >= valor:
            self.saldo -= valor
            self.saques.append(valor)
+           print("\n")
+           print("==================================================")
+           print("\n")
            print(f"Saque de R$ {valor:.2f} realizado com sucesso.")
+           print("\n")
+           print("==================================================")
         else:
+          print("\n")
+          print("==================================================")
+          print("\n")
           print("Saldo insuficiente para realizar o saque.")
+          print("\n")
+          print("==================================================")
       else:
+        print("\n")
+        print("==================================================")
+        print("\n")
         print("O valor do saque não pode exeder R$500,00.")
+        print("\n")
+        print("==================================================")
     else:
+      print("\n")
+      print("==================================================")
+      print("\n")
       print("Limite diário de saques atingido.")
+      print("\n")
+      print("==================================================")
+      
+      
 
   def extrato(self):
     print("\n")

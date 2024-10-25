@@ -1,0 +1,41 @@
+/* Estilo geral */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #a8a8a8; /* Fundo cinza claro */
+}
+
+/* Estilo do header */
+header {
+  background-color: #000000; /* Cor da barra: preta */
+  padding: 10px 500px;
+}
+
+/* Estilo da lista de navegação */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: row; /* Centraliza os itens */
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li.home {
+  margin-left: auto; /* "Home" vai para o lado direito */
+}
+
+nav ul li a {
+  color: white; /* Cor do texto: branco */
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Efeito ao passar o mouse sobre os links */
+nav ul li a:hover {
+  text-decoration: unset;
+}
